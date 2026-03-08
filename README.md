@@ -1,31 +1,25 @@
-# wolai.skill
+# Wolai.skills
 
-连接 Wolai API 的技能，支持读取页面、创建页面、写入内容、操作数据库。
+Wolai API Skill for OpenClaw - Read pages, create pages, write content, operate databases.
 
-## 能做什么
+## Features
 
-- ✅ 自动同步笔记到 Wolai
-- ✅ 从 Wolai 读取知识库信息
-- ✅ 创建新页面/数据库条目
-- ✅ 操作块结构（文本、标题、子页面）
+- ✅ Sync notes to Wolai automatically
+- ✅ Read knowledge base from Wolai
+- ✅ Create new pages/database entries
+- ✅ Operate blocks (text, heading, subpages)
 
-## 安装
-
-```bash
-npx skills add openclaw-contrib/wolai.skill@v1.0.0 -g
-```
-
-或直接：
+## Installation
 
 ```bash
-npx skills add https://github.com/openclaw-contrib/wolai.skill -g
+npx skills add https://github.com/liujunli426-sys/Wolai.skills -g
 ```
 
-## 配置
+## Configuration
 
-1. 在 [wolai 官网](https://www.wolai.com) 创建应用（头像 → 个人设置 → 应用设置）
-2. 复制 AppId 和 AppSecret
-3. 在 `config.json` 中填入：
+1. Create an app in [wolai website](https://www.wolai.com)
+2. Copy AppId and AppSecret
+3. Fill in `config.json`:
 
 ```json
 {
@@ -34,23 +28,16 @@ npx skills add https://github.com/openclaw-contrib/wolai.skill -g
 }
 ```
 
-## 使用示例
+## Usage
 
 ```bash
-# 创建新页面
 python wolai_api.py create_page <parent_id> <title>
-
-# 添加文本
-python wolai_api.py add_text <page_id> <内容>
-
-# 添加标题
-python wolai_api.py add_heading <page_id> <标题> [level]
-
-# 诊断
+python wolai_api.py add_text <page_id> <content>
+python wolai_api.py add_heading <page_id> <title> [level]
 python wolai_api.py test_config
 ```
 
-## 参考资料
+## References
 
-- [Wolai 官方文档](https://www.wolai.com/wolai/7FB9PLeqZ1ni9FfD11WuUi)
-- [Wolai API 文档](https://wolai.apifox.cn/)
+- [Wolai Official Docs](https://www.wolai.com/wolai/7FB9PLeqZ1ni9FfD11WuUi)
+- [Wolai API Docs](https://wolai.apifox.cn/)
