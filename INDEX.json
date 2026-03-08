@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "name": "wolai",
+  "description": "连接 Wolai API 的技能，支持读取页面、创建页面、写入内容、操作数据库",
+  "files": [
+    "SKILL.md",
+    "wolai_api.py",
+    "config.json"
+  ],
+  "vcs": "git",
+  "url": "https://github.com/openclaw-contrib/wolai.skill"
+}
